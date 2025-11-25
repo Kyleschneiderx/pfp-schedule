@@ -1,0 +1,111 @@
+.react-datepicker {
+  @apply !flex !text-neutral-700 !border-none
+}
+
+.react-datepicker__header {
+  @apply !bg-white !border-none !mb-3
+}
+
+.react-datepicker__calendar-icon {
+  fill: #b9b5f6;
+  /* Tailwind's blue-600 */
+  stroke: #5f5ac5;
+}
+
+.react-datepicker__month-container {
+  @apply !flex-1
+}
+
+.react-datepicker__month {
+  @apply !flex-col
+}
+
+.react-datepicker__week {
+  @apply !flex !items-center !justify-between
+}
+
+.react-datepicker__day-names {
+  @apply !flex !items-center !justify-between !px-3
+}
+
+.react-datepicker__day-name {
+  @apply !capitalize !flex !flex-col !items-center !justify-center !text-neutral-700
+}
+
+.react-datepicker__day {
+  @apply !text-neutral-700 !m-1 !w-7 !h-7 !flex !flex-col !items-center !justify-center;
+
+}
+
+.react-datepicker__day:hover {
+  @apply !bg-primary-500/85 !text-white !rounded-full
+}
+
+.react-datepicker__day--keyboard-selected, .react-datepicker__day--selected {
+  @apply !bg-primary-500 !text-white !rounded-full !border-none !outline-none
+}
+
+.react-datepicker__day--today {
+  @apply !text-primary-500  !rounded-full !bg-white !relative
+}
+
+.react-datepicker__day--today.react-datepicker__day--selected {
+  @apply !bg-primary-500 !text-white !rounded-full !border-none !outline-none
+}
+
+.react-datepicker__day--today::after {
+  @apply content-['•'] !absolute !-bottom-2 !left-0 !right-0
+}
+
+.react-datepicker__day--outside-month {
+  @apply !text-neutral-300
+}
+
+.react-datepicker__time-container {
+  @apply !flex !flex-grow !h-full !w-full !flex-col !border-none !shadow-none
+}
+
+.react-datepicker__time {
+  @apply !flex !flex-col !flex-1 !h-full
+}
+
+.react-datepicker__time-header {
+  @apply !border-none
+}
+
+.react-datepicker__time-box {
+  @apply !flex !flex-col !flex-grow !w-full
+}
+
+.react-datepicker__time-list {
+  @apply !flex !flex-col !space-y-3 !flex-grow
+}
+
+.react-datepicker__time-list-item {
+  @apply !text-neutral-700 !border !border-primary-500 !py-5 !flex !items-center !justify-center !rounded-sm
+}
+
+.react-datepicker__time-list-item:hover {
+  @apply !bg-primary-500/85 !border-primary-500/85 !text-white
+  /* Tailwind blue-600 */
+}
+
+.react-datepicker__time-list-item--selected {
+  @apply !bg-primary-500 !text-white
+}
+
+.react-datepicker__month-dropdown,
+.react-datepicker__year-dropdown,
+.react-datepicker__time-container {
+  border: none !important;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
+  /* optional, removes drop shadow */
+}
+
+.react-datepicker__triangle {
+  @apply hidden
+}
+
+.react-datepicker-popper {
+  @apply z-[25]
+}
